@@ -64,9 +64,8 @@ const name = document.getElementById("name");
 const position = document.getElementById("position");
 input.addEventListener("input", updateValue);
 function updateValue(e) {
-    console.log(e.target.value)
     let response = findPerkByName(e.target.value)
-    name.textContent = response.name
-    page.textContent = response.page
-    position.textContent = response.posicao
+    name.textContent = "Name: " + response.name.toString()
+    page.textContent = "Page: " + response.page.toString()
+    position.textContent = "Position: " + response.posicao.toString()
 }
