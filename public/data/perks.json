@@ -1,0 +1,918 @@
+{
+    "survivor": [
+        {
+            "name": "Ace in the Hole",
+            "image": "iconPerks_aceInTheHole.png"
+        },
+        {
+            "name": "Adrenaline",
+            "image": "iconPerks_adrenaline.png"
+        },
+        {
+            "name": "Aftercare",
+            "image": "iconPerks_aftercare.png"
+        },
+        {
+            "name": "Alert",
+            "image": "iconPerks_alert.png"
+        },
+        {
+            "name": "Any Means Necessary",
+            "image": "iconPerks_anyMeansNecessary.png"
+        },
+        {
+            "name": "Appraisal",
+            "image": "iconPerks_appraisal.png"
+        },
+        {
+            "name": "Autodidact",
+            "image": "iconPerks_autodidact.png"
+        },
+        {
+            "name": "Background Player",
+            "image": "iconPerks_BackgroundPlayer.png"
+        },
+        {
+            "name": "Balanced Landing",
+            "image": "iconPerks_balancedLanding.png"
+        },
+        {
+            "name": "Better Than New",
+            "image": "iconPerks_BetterThanNew.png"
+        },
+        {
+            "name": "Bite the Bullet",
+            "image": "iconPerks_BiteTheBullet.png"
+        },
+        {
+            "name": "Blast Mine",
+            "image": "iconPerks_BlastMine.png"
+        },
+        {
+            "name": "Blood Pact",
+            "image": "iconPerks_bloodPact.png"
+        },
+        {
+            "name": "Blood Rush",
+            "image": "iconPerks_BloodRush.png"
+        },
+        {
+            "name": "Boil Over",
+            "image": "iconPerks_boilOver.png"
+        },
+        {
+            "name": "Bond",
+            "image": "iconPerks_bond.png"
+        },
+        {
+            "name": "Boon: Circle of Healing",
+            "image": "iconPerks_BoonCircleOfHealing.png"
+        },
+        {
+            "name": "Boon: Dark Theory",
+            "image": "iconPerks_darkTheory.png"
+        },
+        {
+            "name": "Boon: Exponential",
+            "image": "T_iconPerks_BoonExponential.png"
+        },
+        {
+            "name": "Boon: Shadow Step",
+            "image": "iconPerks_BoonShadowStep.png"
+        },
+        {
+            "name": "Borrowed Time",
+            "image": "iconPerks_borrowedTime.png"
+        },
+        {
+            "name": "Botany Knowledge",
+            "image": "iconPerks_botanyKnowledge.png"
+        },
+        {
+            "name": "Breakdown",
+            "image": "iconPerks_breakdown.png"
+        },
+        {
+            "name": "Breakout",
+            "image": "iconPerks_breakout.png"
+        },
+        {
+            "name": "Buckle Up",
+            "image": "iconPerks_buckleUp.png"
+        },
+        {
+            "name": "Built to Last",
+            "image": "iconPerks_builtToLast.png"
+        },
+        {
+            "name": "Calm Spirit",
+            "image": "iconPerks_calmSpirit.png"
+        },
+        {
+            "name": "Clairvoyance",
+            "image": "iconPerks_Clairvoyance.png"
+        },
+        {
+            "name": "Corrective Action",
+            "image": "T_iconPerks_CorrectiveAction.png"
+        },
+        {
+            "name": "Counterforce",
+            "image": "iconPerks_Counterforce.png"
+        },
+        {
+            "name": "Cut Loose",
+            "image": "iconPerks_CutLoose.png"
+        },
+        {
+            "name": "Dance With Me",
+            "image": "iconPerks_danceWithMe.png"
+        },
+        {
+            "name": "Dark Sense",
+            "image": "iconPerks_darkSense.png"
+        },
+        {
+            "name": "Dead Hard",
+            "image": "iconPerks_DeadHard.png"
+        },
+        {
+            "name": "Deception",
+            "image": "iconPerks_deception.png"
+        },
+        {
+            "name": "Decisive Strike",
+            "image": "iconPerks_decisiveStrike.png"
+        },
+        {
+            "name": "Deja Vu",
+            "image": "iconPerks_dejaVu.png"
+        },
+        {
+            "name": "Deliverance",
+            "image": "iconPerks_deliverance.png"
+        },
+        {
+            "name": "Desperate Measures",
+            "image": "iconPerks_desperateMeasures.png"
+        },
+        {
+            "name": "Detective's Hunch",
+            "image": "iconPerks_detectivesHunch.png"
+        },
+        {
+            "name": "Distortion",
+            "image": "iconPerks_distortion.png"
+        },
+        {
+            "name": "Diversion",
+            "image": "iconPerks_diversion.png"
+        },
+        {
+            "name": "Empathic Connection",
+            "image": "iconPerks_empathicConnection.png"
+        },
+        {
+            "name": "Empathy",
+            "image": "iconPerks_empathy.png"
+        },
+        {
+            "name": "Fast Track",
+            "image": "iconPerks_FastTrack.png"
+        },
+        {
+            "name": "Flashbang",
+            "image": "iconPerks_Flashbang.png"
+        },
+        {
+            "name": "Flip-Flop",
+            "image": "iconPerks_flipFlop.png"
+        },
+        {
+            "name": "Fogwise",
+            "image": "iconPerks_Fogwise.png"
+        },
+        {
+            "name": "For the People",
+            "image": "iconPerks_forThePeople.png"
+        },
+        {
+            "name": "Friendly Competition",
+            "image": "iconPerks_FriendlyCompetition.png"
+        },
+        {
+            "name": "Guardian",
+            "image": "iconPerks_babySitter.png"
+        },
+        {
+            "name": "Head On",
+            "image": "iconPerks_headOn.png"
+        },
+        {
+            "name": "Hope",
+            "image": "iconPerks_hope.png"
+        },
+        {
+            "name": "Hyperfocus",
+            "image": "iconPerks_Hyperfocus.png"
+        },
+        {
+            "name": "Inner Focus",
+            "image": "iconPerks_InnerFocus.png"
+        },
+        {
+            "name": "Inner Healing",
+            "image": "iconPerks_innerStrength.png"
+        },
+        {
+            "name": "Iron Will",
+            "image": "iconPerks_ironWill.png"
+        },
+        {
+            "name": "Kindred",
+            "image": "iconPerks_kindred.png"
+        },
+        {
+            "name": "Kinship",
+            "image": "iconPerks_camaraderie.png"
+        },
+        {
+            "name": "Leader",
+            "image": "iconPerks_leader.png"
+        },
+        {
+            "name": "Left Behind",
+            "image": "iconPerks_leftBehind.png"
+        },
+        {
+            "name": "Lightweight",
+            "image": "iconPerks_lightweight.png"
+        },
+        {
+            "name": "Lithe",
+            "image": "iconPerks_lithe.png"
+        },
+        {
+            "name": "Low Profile",
+            "image": "iconPerks_LowProfile.png"
+        },
+        {
+            "name": "Lucky Break",
+            "image": "iconPerks_luckyBreak.png"
+        },
+        {
+            "name": "Mettle of Man",
+            "image": "iconPerks_mettleOfMan.png"
+        },
+        {
+            "name": "No Mither",
+            "image": "iconPerks_NoMither.png"
+        },
+        {
+            "name": "No One Left Behind",
+            "image": "iconPerks_noOneLeftBehind.png"
+        },
+        {
+            "name": "Object of Obsession",
+            "image": "iconPerks_objectOfObsession.png"
+        },
+        {
+            "name": "Off the Record",
+            "image": "iconPerks_offTheRecord.png"
+        },
+        {
+            "name": "Open-Handed",
+            "image": "iconPerks_openHanded.png"
+        },
+        {
+            "name": "Overcome",
+            "image": "T_iconPerks_Overcome.png"
+        },
+        {
+            "name": "Overzealous",
+            "image": "iconPerks_Overzealous.png"
+        },
+        {
+            "name": "Parental Guidance",
+            "image": "iconPerks_parentalGuidance.png"
+        },
+        {
+            "name": "Pharmacy",
+            "image": "iconPerks_pharmacy.png"
+        },
+        {
+            "name": "Plunderer's Instinct",
+            "image": "iconPerks_plunderersInstinct.png"
+        },
+        {
+            "name": "Poised",
+            "image": "iconPerks_poised.png"
+        },
+        {
+            "name": "Potential Energy",
+            "image": "iconPerks_PotentialEnergy.png"
+        },
+        {
+            "name": "Power Struggle",
+            "image": "iconPerks_powerStruggle.png"
+        },
+        {
+            "name": "Premonition",
+            "image": "iconPerks_premonition.png"
+        },
+        {
+            "name": "Prove Thyself",
+            "image": "iconPerks_proveThyself.png"
+        },
+        {
+            "name": "Quick & Quiet",
+            "image": "iconPerks_quickAndQuiet.png"
+        },
+        {
+            "name": "Quick Gambit",
+            "image": "iconPerks_VittoriosGambit.png"
+        },
+        {
+            "name": "Reactive Healing",
+            "image": "iconPerks_ReactiveHealing.png"
+        },
+        {
+            "name": "Reassurance",
+            "image": "iconPerks_Reassurance.png"
+        },
+        {
+            "name": "Red Herring",
+            "image": "iconPerks_redHerring.png"
+        },
+        {
+            "name": "Renewal",
+            "image": "iconPerks_secondWind.png"
+        },
+        {
+            "name": "Repressed Alliance",
+            "image": "iconPerks_repressedAlliance.png"
+        },
+        {
+            "name": "Residual Manifest",
+            "image": "iconPerks_ResidualManifest.png"
+        },
+        {
+            "name": "Resilience",
+            "image": "iconPerks_resilience.png"
+        },
+        {
+            "name": "Resurgence",
+            "image": "iconPerks_Resurgence.png"
+        },
+        {
+            "name": "Rookie Spirit",
+            "image": "iconPerks_RookieSpirit.png"
+        },
+        {
+            "name": "Saboteur",
+            "image": "iconPerks_saboteur.png"
+        },
+        {
+            "name": "Self-Aware",
+            "image": "iconPerks_fixated.png"
+        },
+        {
+            "name": "Self-Care",
+            "image": "iconPerks_selfCare.png"
+        },
+        {
+            "name": "Self-Preservation",
+            "image": "iconPerks_Self-Preservation.png"
+        },
+        {
+            "name": "Situational Awareness",
+            "image": "iconPerks_betterTogether.png"
+        },
+        {
+            "name": "Slippery Meat",
+            "image": "iconPerks_slipperyMeat.png"
+        },
+        {
+            "name": "Small Game",
+            "image": "iconPerks_smallGame.png"
+        },
+        {
+            "name": "Smash Hit",
+            "image": "iconPerks_SmashHit.png"
+        },
+        {
+            "name": "Sole Survivor",
+            "image": "iconPerks_soleSurvivor.png"
+        },
+        {
+            "name": "Solidarity",
+            "image": "iconPerks_solidarity.png"
+        },
+        {
+            "name": "Soul Guard",
+            "image": "iconPerks_soulGuard.png"
+        },
+        {
+            "name": "Spine Chill",
+            "image": "iconPerks_spineChill.png"
+        },
+        {
+            "name": "Sprint Burst",
+            "image": "iconPerks_sprintBurst.png"
+        },
+        {
+            "name": "Stake Out",
+            "image": "iconPerks_stakeOut.png"
+        },
+        {
+            "name": "Streetwise",
+            "image": "iconPerks_streetwise.png"
+        },
+        {
+            "name": "Teamwork: Collective Stealth",
+            "image": "iconPerks_TeamworkCollectiveStealth.png"
+        },
+        {
+            "name": "Teamwork: Power of Two",
+            "image": "iconPerks_TeamworkPowerOfTwo.png"
+        },
+        {
+            "name": "Technician",
+            "image": "iconPerks_technician.png"
+        },
+        {
+            "name": "Tenacity",
+            "image": "iconPerks_tenacity.png"
+        },
+        {
+            "name": "This Is Not Happening",
+            "image": "iconPerks_thisIsNotHappening.png"
+        },
+        {
+            "name": "Unbreakable",
+            "image": "iconPerks_unbreakable.png"
+        },
+        {
+            "name": "Up the Ante",
+            "image": "iconPerks_upTheAnte.png"
+        },
+        {
+            "name": "Urban Evasion",
+            "image": "iconPerks_urbanEvasion.png"
+        },
+        {
+            "name": "Vigil",
+            "image": "iconPerks_vigil.png"
+        },
+        {
+            "name": "Visionary",
+            "image": "iconPerks_visionary.png"
+        },
+        {
+            "name": "Wake Up!",
+            "image": "iconPerks_wakeUp.png"
+        },
+        {
+            "name": "We'll make it",
+            "image": "iconPerks_wellMakeIt.png"
+        },
+        {
+            "name": "We're Gonna Live Forever",
+            "image": "iconPerks_WereGonnaLiveForever.png"
+        },
+        {
+            "name": "Windows of Opportunity",
+            "image": "iconPerks_windowsOfOpportunity.png"
+        },
+        {
+            "name": "Wiretap",
+            "image": "iconPerks_Wiretap.png"
+        }
+    ],
+    "killer": [
+        {
+            "name": "A Nurse's Calling",
+            "image": "iconPerks_aNursesCalling.png"
+        },
+        {
+            "name": "Agitation",
+            "image": "iconPerks_agitation.png"
+        },
+        {
+            "name": "Awakened Awareness",
+            "image": "iconPerks_AwakenedAwarenesss.png"
+        },
+        {
+            "name": "Bamboozle",
+            "image": "iconPerks_bamboozle.png"
+        },
+        {
+            "name": "Barbecue & Chili",
+            "image": "iconPerks_BBQAndChili.png"
+        },
+        {
+            "name": "Beast of Prey",
+            "image": "iconPerks_BeastOfPrey.png"
+        },
+        {
+            "name": "Bitter Murmur",
+            "image": "iconPerks_bitterMurmur.png"
+        },
+        {
+            "name": "Blood Echo",
+            "image": "iconPerks_bloodEcho.png"
+        },
+        {
+            "name": "Blood Warden",
+            "image": "iconPerks_bloodWarden.png"
+        },
+        {
+            "name": "Bloodhound",
+            "image": "iconPerks_bloodhound.png"
+        },
+        {
+            "name": "Brutal Strength",
+            "image": "iconPerks_brutalStrength.png"
+        },
+        {
+            "name": "Call of Brine",
+            "image": "iconPerks_callOfBrine.png"
+        },
+        {
+            "name": "Claustrophobia",
+            "image": "iconPerks_cruelConfinement.png"
+        },
+        {
+            "name": "Corrupt Intervention",
+            "image": "iconPerks_corruptIntervention.png"
+        },
+        {
+            "name": "Coulrophobia",
+            "image": "iconPerks_coulrophobia.png"
+        },
+        {
+            "name": "Coup de Grâce",
+            "image": "iconPerks_coupDeGrace.png"
+        },
+        {
+            "name": "Dark Devotion",
+            "image": "iconPerks_darkDevotion.png"
+        },
+        {
+            "name": "Darkness Revealed",
+            "image": "iconPerks_DarknessRevelated.png"
+        },
+        {
+            "name": "Dead Man’s Switch",
+            "image": "iconPerks_deadManSwitch.png"
+        },
+        {
+            "name": "Deadlock",
+            "image": "iconPerks_Deadlock.png"
+        },
+        {
+            "name": "Deathbound",
+            "image": "iconPerks_deathbound.png"
+        },
+        {
+            "name": "Deerstalker",
+            "image": "iconPerks_deerstalker.png"
+        },
+        {
+            "name": "Discordance",
+            "image": "iconPerks_discordance.png"
+        },
+        {
+            "name": "Dissolution",
+            "image": "iconPerks_Dissolution.png"
+        },
+        {
+            "name": "Distressing",
+            "image": "iconPerks_distressing.png"
+        },
+        {
+            "name": "Dragon’s Grip",
+            "image": "iconPerks_dragonsGrip.png"
+        },
+        {
+            "name": "Dying Light",
+            "image": "iconPerks_dyingLight.png"
+        },
+        {
+            "name": "Enduring",
+            "image": "iconPerks_enduring.png"
+        },
+        {
+            "name": "Eruption",
+            "image": "iconPerks_eruption.png"
+        },
+        {
+            "name": "Fearmonger",
+            "image": "iconPerks_mindBreaker.png"
+        },
+        {
+            "name": "Fire Up",
+            "image": "iconPerks_fireUp.png"
+        },
+        {
+            "name": "Forced Penance",
+            "image": "iconPerks_forcedPenance.png"
+        },
+        {
+            "name": "Franklin's Demise",
+            "image": "iconPerks_franklinsLoss.png"
+        },
+        {
+            "name": "Furtive Chase",
+            "image": "iconPerks_furtiveChase.png"
+        },
+        {
+            "name": "Game Afoot",
+            "image": "iconPerks_GameAfoot.png"
+        },
+        {
+            "name": "Gearhead",
+            "image": "iconPerks_gearHead.png"
+        },
+        {
+            "name": "Grim Embrace",
+            "image": "T_iconPerks_grimEmbrace.png"
+        },
+        {
+            "name": "Hangman's Trick",
+            "image": "iconPerks_hangmansTrick.png"
+        },
+        {
+            "name": "Hex: Blood Favor",
+            "image": "iconPerks_hexBloodFavor.png"
+        },
+        {
+            "name": "Hex: Crowd Control",
+            "image": "iconPerks_HexCrowdControl.png"
+        },
+        {
+            "name": "Hex: Devour Hope",
+            "image": "iconPerks_devourHope.png"
+        },
+        {
+            "name": "Hex: Face the Darkness",
+            "image": "iconPerks_HexFaceTheDarkness.png"
+        },
+        {
+            "name": "Hex: Haunted Ground",
+            "image": "iconPerks_hauntedGround.png"
+        },
+        {
+            "name": "Hex: Huntress Lullaby",
+            "image": "iconPerks_HuntressLullaby.png"
+        },
+        {
+            "name": "Hex: No One Escapes Death",
+            "image": "iconPerks_noOneEscapesDeath.png"
+        },
+        {
+            "name": "Hex: Pentimento",
+            "image": "T_iconPerks_hexPentimento.png"
+        },
+        {
+            "name": "Hex: Plaything",
+            "image": "iconPerks_HexPlaything.png"
+        },
+        {
+            "name": "Hex: Retribution",
+            "image": "iconPerks_hexRetribution.png"
+        },
+        {
+            "name": "Hex: Ruin",
+            "image": "iconPerks_ruin.png"
+        },
+        {
+            "name": "Hex: The Third Seal",
+            "image": "iconPerks_theThirdSeal.png"
+        },
+        {
+            "name": "Hex: Thrill of the Hunt",
+            "image": "iconPerks_thrillOfTheHunt.png"
+        },
+        {
+            "name": "Hex: Undying",
+            "image": "iconPerks_hexUndying.png"
+        },
+        {
+            "name": "Hoarder",
+            "image": "iconPerks_Hoarder.png"
+        },
+        {
+            "name": "Hubris",
+            "image": "iconPerks_Hubris.png"
+        },
+        {
+            "name": "Hysteria",
+            "image": "iconPerks_hysteria.png"
+        },
+        {
+            "name": "I'm All Ears",
+            "image": "iconPerks_imAllEars.png"
+        },
+        {
+            "name": "Infectious Fright",
+            "image": "iconPerks_infectiousFright.png"
+        },
+        {
+            "name": "Insidious",
+            "image": "iconPerks_insidious.png"
+        },
+        {
+            "name": "Iron Grasp",
+            "image": "iconPerks_ironGrasp.png"
+        },
+        {
+            "name": "Iron Maiden",
+            "image": "iconPerks_ironMaiden.png"
+        },
+        {
+            "name": "Jolt",
+            "image": "iconPerks_surge.png"
+        },
+        {
+            "name": "Knock Out",
+            "image": "iconPerks_knockOut.png"
+        },
+        {
+            "name": "Lethal Pursuer",
+            "image": "iconPerks_lethalPursuer.png"
+        },
+        {
+            "name": "Leverage",
+            "image": "iconPerks_Leverage.png"
+        },
+        {
+            "name": "Lightborn",
+            "image": "iconPerks_lightborn.png"
+        },
+        {
+            "name": "Mad Grit",
+            "image": "iconPerks_madGrit.png"
+        },
+        {
+            "name": "Make your Choice",
+            "image": "iconPerks_makeYourChoice.png"
+        },
+        {
+            "name": "Merciless Storm",
+            "image": "iconPerks_mercilessStorm.png"
+        },
+        {
+            "name": "Monitor & Abuse",
+            "image": "iconPerks_monitorAndAbuse.png"
+        },
+        {
+            "name": "Nemesis",
+            "image": "iconPerks_nemesis.png"
+        },
+        {
+            "name": "No Way Out",
+            "image": "iconPerks_NoWayOut.png"
+        },
+        {
+            "name": "Nowhere to Hide",
+            "image": "iconPerks_NowhereToHide.png"
+        },
+        {
+            "name": "Oppression",
+            "image": "iconPerks_Oppression.png"
+        },
+        {
+            "name": "Overcharge",
+            "image": "iconPerks_generatorOvercharge.png"
+        },
+        {
+            "name": "Overwhelming Presence",
+            "image": "iconPerks_overwhelmingPresence.png"
+        },
+        {
+            "name": "Play With Your Food",
+            "image": "iconPerks_playWithYourFood.png"
+        },
+        {
+            "name": "Pop Goes the Weasel",
+            "image": "iconPerks_popGoesTheWeasel.png"
+        },
+        {
+            "name": "Predator",
+            "image": "iconPerks_predator.png"
+        },
+        {
+            "name": "Rancor",
+            "image": "iconPerks_hatred.png"
+        },
+        {
+            "name": "Remember Me",
+            "image": "iconPerks_rememberMe.png"
+        },
+        {
+            "name": "Save the best for last",
+            "image": "iconPerks_saveTheBestForLast.png"
+        },
+        {
+            "name": "Scourge Hook: Floods of Rage",
+            "image": "iconPerks_floodOfRage.png"
+        },
+        {
+            "name": "Scourge Hook: Gift of Pain",
+            "image": "iconPerks_ScourgeHookGiftOfPain.png"
+        },
+        {
+            "name": "Scourge Hook: Monstrous Shrine",
+            "image": "iconPerks_monstrousShrine.png"
+        },
+        {
+            "name": "Scourge Hook: Pain Resonance",
+            "image": "T_iconPerks_painResonance.png"
+        },
+        {
+            "name": "Septic Touch",
+            "image": "iconPerks_SepticTouch.png"
+        },
+        {
+            "name": "Shadowborn",
+            "image": "iconPerks_shadowborn.png"
+        },
+        {
+            "name": "Shattered Hope",
+            "image": "iconPerks_BoonDestroyer.png"
+        },
+        {
+            "name": "Sloppy Butcher",
+            "image": "iconPerks_sloppyButcher.png"
+        },
+        {
+            "name": "Spies from the Shadows",
+            "image": "iconPerks_spiesFromTheShadows.png"
+        },
+        {
+            "name": "Spirit Fury",
+            "image": "iconPerks_spiritFury.png"
+        },
+        {
+            "name": "Starstruck",
+            "image": "iconPerks_Starstruck.png"
+        },
+        {
+            "name": "Stridor",
+            "image": "iconPerks_stridor.png"
+        },
+        {
+            "name": "Superior Anatomy",
+            "image": "iconPerks_SuperiorAnatomy.png"
+        },
+        {
+            "name": "Surveillance",
+            "image": "iconPerks_surveillance.png"
+        },
+        {
+            "name": "THWACK!",
+            "image": "iconPerks_Thwack.png"
+        },
+        {
+            "name": "Terminus",
+            "image": "iconPerks_Terminus.png"
+        },
+        {
+            "name": "Territorial Imperative",
+            "image": "iconPerks_TerritorialImperative.png"
+        },
+        {
+            "name": "Thanatophobia",
+            "image": "iconPerks_thatanophobia.png"
+        },
+        {
+            "name": "Thrilling Tremors",
+            "image": "iconPerks_thrillingTremors.png"
+        },
+        {
+            "name": "Tinkerer",
+            "image": "iconPerks_tinkerer.png"
+        },
+        {
+            "name": "Trail of Torment",
+            "image": "iconPerks_trailOfTorment.png"
+        },
+        {
+            "name": "Unnerving Presence",
+            "image": "iconPerks_unnervingPresence.png"
+        },
+        {
+            "name": "Unrelenting",
+            "image": "iconPerks_unrelenting.png"
+        },
+        {
+            "name": "Whispers",
+            "image": "iconPerks_whispers.png"
+        },
+        {
+            "name": "Zanshin Tactics",
+            "image": "iconPerks_zanshinTactics.png"
+        }
+    ]
+}

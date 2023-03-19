@@ -1,0 +1,109 @@
+body {
+  background-color: #000
+}
+
+
+.line:nth-child(2),.line:nth-child(3) {
+  margin-top: -55px !important;
+}
+
+.line:nth-child(2) {
+  margin-left: 97px !important;
+}
+
+.line span {
+  display: inline-block;
+  width: 500px;
+}
+
+/*  Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .line span {
+    width: 600px !important;
+  }
+
+  .line:nth-child(2),.line:nth-child(3) {
+    margin-top: -55px !important;
+  }
+
+  .line:nth-child(2) {
+    margin-left: 118px !important;
+  }
+}
+
+/*  Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .line span {
+    width: 660px !important;
+  }
+
+  .line:nth-child(2),.line:nth-child(3) {
+    margin-top: -55px !important;
+  }
+
+  .line:nth-child(2) {
+    margin-left: 131px !important;
+  }
+}
+
+
+
+.line img {
+  width: calc(20% - 20px);
+  margin: 10px;
+  background-image: url(assets/img/perks/base.png);
+  background-position: center;
+  background-size: cover;
+}
+
+img.selected {
+  filter: drop-shadow(0px 0px 12px gold);
+}
+
+[type='radio'] {
+  display: none;
+}
+
+datalist {
+  background-color: white;
+  border: 1px solid blue;
+  border-radius: 0 0 5px 5px;
+  border-top: none;
+  font-family: sans-serif;
+  padding: 5px;
+  max-height: 20rem;
+  overflow-y: auto
+}
+
+option {
+  background-color: white;
+  padding: 4px;
+  color: blue;
+  margin-bottom: 1px;
+  cursor: context-menu;
+}
+
+option:hover,
+.active {
+  background-color: lightblue;
+}
+
+#divSearch {
+  position: relative;
+  display: inline-block;
+}
+
+.datalist-wrapper {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.datalist-wrapper select {
+  width: 100%;
+}
+
+#search {
+  width: 20rem;
+}

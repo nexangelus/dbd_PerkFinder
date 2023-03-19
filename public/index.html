@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DBD - Perk Finder</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://unpkg.com/vue@3.2.47/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="bg-dark">
+    <div id="v">
+        <h1 class="text-center text-white">DBD - Perk Finder</h1>
+        <div class="text-center">
+            <div class="btn-group btn-group-toggle">
+                <label class="btn" v-for="option in options"
+                    :class="[optionSelected === option ? 'active' : '', option === 'Killer' ? 'btn-outline-danger' : 'btn-outline-success']">
+                    <input type="radio" name="options" :id="`option-${option}`" autocomplete="off"
+                        @click="setOptionSelected(option)"> {{option}}
+                </label>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <h3 class="text-white">Perk Name</h3>
+            <div id="divSearch">
+                <input list="" id="search" autocomplete="off" role="combobox" v-model="search" @input="searchInput()"/>
+                <div class="datalist-wrapper">
+                    <datalist class="text-center" id="perksOptions" role="listbox">
+                        <option v-for="perk in getPerksSelected" :id="`option-${perk.name}`" :value="perk.name"
+                            @mousedown="selectPerk(perk.name)">{{perk.name}}</option>
+                    </datalist>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="text-center">
+            <div class="line" v-for="perksLine in getPerksInPage()">
+                <span>
+                    <img v-for="perk in perksLine" :src="'assets/img/perks/' + perk.image"
+                        :class="[perk.name === search ? 'selected': '']">
+                </span>
+            </div>
+        </div>
+        <div class="text-center">
+            <div class="col">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-outline-primary" v-for="page in pageLimit"
+                        :class="[selectedPage === page ? 'active' : '']" @click="selectedPage = page">{{page}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
