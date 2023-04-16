@@ -13,15 +13,19 @@ const v = {
             selectedPage: 1,
             currentFocus: -1,
             choicesElement: null,
-            images: []
+            images: [],
+            perksOwned: [],
+            showModal: false,
+            survivorPerksNotOwned: [],
+            killerPerksNotOwned: [],
         }
     },
     created() {
         this.fetchPerks();
+        this.showLocalStorageContent();
     },
     mount() {
-
-    },
+    },    
     computed: {
         pageLimit() {
             const perksCount = this.getPerksSelected.length;
@@ -29,9 +33,9 @@ const v = {
         },
         getPerksSelected() {
             if (this.optionSelected === "Killer") {
-                return this.killerPerks;
+                return this.killerPerks.filter(e => !this.killerPerksNotOwned.includes(e.name));
             } else {
-                return this.survivorPerks;
+                return this.survivorPerks.filter(e => !this.survivorPerksNotOwned.includes(e.name));
             }
         },
     },
@@ -66,17 +70,27 @@ const v = {
 
                 this.preloadImage([...res.data.survivor, ...res.data.killer]);
             }).catch(err => console.log(err));
-
+            
         },
         setOptionSelected(optionSelected) {
             this.optionSelected = optionSelected;
             this.selectedPage = 1;
         },
+        getPerks() {
+            if (this.optionSelected === "Killer") {
+                return this.killerPerks;
+            }
+            return this.survivorPerks
+        },
         getPerksInPage() {
             const page = this.selectedPage - 1;
             const startIndex = page * 15;
             const perks = this.getPerksSelected.slice(startIndex, startIndex + 15);
-
+            if (perks.length < 15) {
+                for (; perks.length < 15;) {
+                    perks.push({ "name": "__", "image": "base_empty.png" })
+                }
+            }
             return this.chunkArray(perks, 5);
         },
         chunkArray(inputArray, perChunk) {
@@ -98,10 +112,68 @@ const v = {
             for (const perk of perks) {
                 const image = new Image();
                 image.src = 'assets/img/perks/' + perk.image;
-                console.log(image.src)
-                this.images.push(image);
             }
+        },
+        showLocalStorageContent() {
+            
+            const localSurvivorPerksNotOwned = localStorage.getItem('survivorPerksNotOwned');
+            if (localSurvivorPerksNotOwned) {
+                this.survivorPerksNotOwned = localSurvivorPerksNotOwned.split(',');
+            }
+            else {
+                localStorage.setItem('survivorPerksNotOwned', this.survivorPerksNotOwned);
+            }
+            const localKillerPerks = localStorage.getItem('killerPerksNotOwned');
+            if (localKillerPerks) {
+                this.killerPerksNotOwned = localKillerPerks.split(',');
+            }
+            else {
+                localStorage.setItem('killerPerksNotOwned', this.killerPerksNotOwned);
+            }
+
+        },
+        storePerk(perkName) {
+            if(this.optionSelected === "Survivor") {
+                if(this.survivorPerksNotOwned.includes(perkName)) {
+                    const index = this.survivorPerksNotOwned.indexOf(perkName);
+                    this.survivorPerksNotOwned.splice(index, 1)
+                }
+                else {
+                    this.survivorPerksNotOwned.push(perkName);
+                }
+            }
+            else {
+                if(this.killerPerksNotOwned.includes(perkName)) {
+                    const index = this.killerPerksNotOwned.indexOf(perkName);
+                    this.killerPerksNotOwned.splice(index, 1)
+                }
+                else {
+                    this.killerPerksNotOwned.push(perkName);
+                }
+            }
+            localStorage.setItem('survivorPerksNotOwned', this.survivorPerksNotOwned);
+            localStorage.setItem('killerPerksNotOwned', this.killerPerksNotOwned);
+        },
+        openModalExample() {
+            this.$vfm.show('example')
+        },
+        selectAllPerks() {
+            if(this.optionSelected === "Survivor") {
+                this.survivorPerksNotOwned = [];
+                localStorage.setItem('survivorPerksNotOwned', this.survivorPerksNotOwned);
+            }else {
+                this.killerPerksNotOwned = [];
+                localStorage.setItem('killerPerksNotOwned', this.killerPerksNotOwned);
+            }    
         }
     },
 }
-Vue.createApp(v).mount('#v');
+
+// register modal component
+/*Vue.component("modal", {
+    template: "#modal-template"
+  });*/
+
+const app = Vue.createApp(v)
+    .mount('#v');
+

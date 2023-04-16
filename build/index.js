@@ -4,15 +4,15 @@ const fs = require('fs');
 const PERKS_API_URL = "https://dbd.tricky.lol/api/perks";
 const PERKS_IMAGES_URL = "https://dbd.tricky.lol/dbdassets/perks/";
 
-const PERKS_FILE_LOCATION = "../public/data/perks.json";
-const PERKS_IMAGES_LOCATION = "../public/assets/img/perks/";
+const PERKS_FILE_LOCATION = "../docs/data/perks.json";
+const PERKS_IMAGES_LOCATION = "../docs/assets/img/perks/";
 
 
 
 async function updatePerks() {
     let result = await axios.get(PERKS_API_URL);
     const perks = { survivor: [], killer: [] };
-    const perksSorted = Object.values(result.data).sort((a, b) => (a.name > b.name) ? 1 : -1);
+    const perksSorted = Object.values(result.data).sort((a, b) => a.name.localeCompare(b.name, undefined, {sensitivity: 'base'}));
 
     let survivorIndex = 1, killerIndex = 1;
     for (const element of perksSorted) {
@@ -78,7 +78,7 @@ async function updatePerks() {
 
 //         //console.log(imageUrl);
 //     }
-}
+//}
 
 updatePerks();
 

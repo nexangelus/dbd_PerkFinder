@@ -2,16 +2,36 @@
 <html>
 
 <head>
-    <title>DBD - Perk Finder</title>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script type="module" src="main.js"></script>
+    <title>Dead By Daylight - Perk Search Bar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="assets/img/icon/logo.png">
+    <meta name="title" content="Dead By Daylight - Perk Search Bar">
+    <meta name="description" content="This simple website will let you search for a perk, and show the location">
+    <meta name="keywords" content="deadbydaylight, dbd, perks, search bar, search, dead by daylight, perk">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
     <meta name="author" content="André e André">
     <meta name="darkreader-lock">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nexangelus.github.io/dbd_PerkFinder/">
+    <meta property="og:title" content="Dead By Daylight - Perk Search Bar">
+    <meta property="og:description" content="This simple website will let you search for a perk, and show the location">
+    <meta property="og:image" content="https://nexangelus.github.io/dbd_PerkFinder/assets/img/icon/image.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nexangelus.github.io/dbd_PerkFinder/">
+    <meta property="twitter:title" content="Dead By Daylight - Perk Search Bar">
+    <meta property="twitter:description" content="This simple website will let you search for a perk, and show the location">
+    <meta property="twitter:image" content="https://nexangelus.github.io/dbd_PerkFinder/assets/img/icon/image.png">
+    
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="main.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://unpkg.com/vue@3.2.47/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue@3.2.47/dist/vue.global.prod.js"></script>
+    <script src="https://unpkg.com/vue-final-modal@3"></script>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
@@ -27,27 +47,23 @@
                     <input type="radio" name="options" :id="`option-${option}`" autocomplete="off"
                         @click="setOptionSelected(option)"> {{option}}
                 </label>
+                
             </div>
         </div>
 
         <div class="text-center mt-3">
             <div id="divSearch">
                 <select class="form-control" v-model="search" name="choices-perks" id="choices-perks"></select>
-                <!-- <input list=""  autocomplete="off" role="combobox"  @input="searchInput()" />
-                <div class="datalist-wrapper">
-                    <datalist class="text-center" id="perksOptions" role="listbox">
-                        <option v-for="perk in getPerksSelected" :id="`option-${perk.name}`" :value="perk.name"
-                            @mousedown="selectPerk(perk.name)">{{perk.name}}</option>
-                    </datalist>
-                </div> -->
             </div>
+            <button id="settingsButton" type="button" class="btn btn-sm btn-light" @click="showModal = true">⚙️</button>
+            
         </div>
 
         <div class="text-center mt-3">
             <div class="line" v-for="perksLine in getPerksInPage()">
                 <span>
                     <img v-for="perk in perksLine" :src="'assets/img/perks/' + perk.image"
-                        :class="[perk.name === search ? 'selected': '']">
+                        :class="[perk.name === search ? 'selected': '', perk.name === '__' ? 'empty' : '']">
 
                 </span>
             </div>
@@ -67,10 +83,43 @@
                     href="https://github.com/andre-paulo98">@andre-paulo98</a> </div>
             <div class="text-center text-white">Source: <a
                     href="https://github.com/nexangelus/dbd_PerkFinder">nexangelus/dbd_PerkFinder</a> </div>
+            <div class="text-center text-white">Add it to your favorites in <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2949296707" target="#blank">Steam Guides</a> </div>
+            
         </footer>
+        <div v-if="showModal" class="modal fade show" style="display: block" id="showModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog " role="document">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-white ">Perks Owned</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" @click="showModal = false">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="text-center">
+                            <button type="button text-center" class="btn btn-primary" @click="selectAllPerks()">Select All</button>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col" v-for="perk in getPerks()">
+                                <span>
+                                    <img :src="'assets/img/perks/' + perk.image" style="height: 50px; width: 50px;" 
+                                    @click="storePerk(perk.name)" 
+                                    :class="[survivorPerksNotOwned.includes(perk.name) || killerPerksNotOwned.includes(perk.name) ? '': 'owned']">
+                
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" @click="showModal = false">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div v-if="showModal" class="modal-backdrop fade show"></div>
     </div>
-
+    
 </body>
-
 
 </html>

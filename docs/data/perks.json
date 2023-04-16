@@ -871,10 +871,6 @@
             "image": "iconPerks_surveillance.png"
         },
         {
-            "name": "THWACK!",
-            "image": "iconPerks_Thwack.png"
-        },
-        {
             "name": "Terminus",
             "image": "iconPerks_Terminus.png"
         },
@@ -889,6 +885,10 @@
         {
             "name": "Thrilling Tremors",
             "image": "iconPerks_thrillingTremors.png"
+        },
+        {
+            "name": "THWACK!",
+            "image": "iconPerks_Thwack.png"
         },
         {
             "name": "Tinkerer",

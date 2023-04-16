@@ -114,7 +114,9 @@ body {
 }
 
 
-
+img.owned {
+  filter: drop-shadow(0px 0px 12px gold);
+}
 
 img.selected {
   filter: drop-shadow(0px 0px 12px gold);
@@ -181,4 +183,16 @@ option:hover,
 
 a {
   text-decoration: none;
+}
+
+img.empty {
+  filter: grayscale(100%);
+}
+
+
+#settingsButton{
+  height: 44px;
+  margin-top: 16px;
+  margin-left: 4px;
+  font-size: 20px;
 }
